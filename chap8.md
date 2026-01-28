@@ -621,20 +621,20 @@ $$R^2 = \frac{s^2_{aid} - s^2_{RES}}{s^2_{aid}} = \frac{29,800,000 - 22,400,000}
 
 범주형 변수도 결과를 예측하는 데 유용하다. 닌텐도 Wii용 비디오 게임 마리오 카트의 eBay 경매를 고려하는데, 총 가격과 게임 상태("중고" 또는 "새 것")가 기록되었다.
 
-범주를 회귀 방정식에 포함시키려면 수치 형태로 변환해야 한다. **지시변수(indicator variable)** cond_new를 사용한다:
+범주를 회귀 방정식에 포함시키려면 수치 형태로 변환해야 한다. **지시변수(indicator variable)** cond new를 사용한다:
 
-$$\text{cond\_new} = \begin{cases} 1 & \text{새 것이면} \\ 0 & \text{중고이면} \end{cases}$$
+$$\text{cond new} = \begin{cases} 1 & \text{새 것이면} \\ 0 & \text{중고이면} \end{cases}$$
 
 
 모형:
-$$\widehat{\text{price}} = 42.87 + 10.90 \times \text{cond\_new}$$
+$$\widehat{\text{price}} = 42.87 + 10.90 \times \text{cond new}$$
 
 #### 예제 8.16
 
 **문제**: eBay 경매에서 마리오 카트 가격에 대한 모형의 모수를 해석하라.
 
 **풀이**:
-- **절편 (42.87)**: cond_new = 0일 때, 즉 중고 게임의 평균 판매 가격은 $42.87
+- **절편 (42.87)**: cond new = 0일 때, 즉 중고 게임의 평균 판매 가격은 $42.87
 - **기울기 (10.90)**: 새 게임은 평균적으로 중고 게임보다 $10.90 더 비싸게 팔린다
 
 ---
