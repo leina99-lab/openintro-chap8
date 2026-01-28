@@ -475,8 +475,8 @@ plt.show()
 
 엘름허스트 데이터에 대해, 최소제곱 회귀선의 방정식을 다음과 같이 쓸 수 있다:
 
-$$\widehat{\text{aid}} = \beta_0 + \beta_1 \times \text{family\_income}$$
 
+$$\widehat{\text{aid}} = \beta_0 + \beta_1 \times \text{family_income}$$
 모수는 관측 데이터를 사용하여 추정된다. 최소제곱선의 두 가지 성질:
 
 > **최소제곱선 구하기**
@@ -506,7 +506,7 @@ $$b_1 = \frac{s_y}{s_x} R = \frac{5456}{63001} \times (-0.499) = -0.0431$$
 **풀이**: 
 $$b_0 = \bar{y} - b_1 \bar{x} = 19939 - (-0.0431) \times 101784 = 19939 + 4387 = 24326$$
 
-따라서 회귀 방정식은: $\widehat{\text{aid}} = 24,326 - 0.0431 \times \text{family\_income}$
+따라서 회귀 방정식은: $\widehat{\text{aid}} = 24,326 - 0.0431 \times \text{family_income}$
 
 ```python
 # 그림 8.15: 엘름허스트 대학 장학금 데이터
@@ -625,6 +625,7 @@ $$R^2 = \frac{s^2_{aid} - s^2_{RES}}{s^2_{aid}} = \frac{29,800,000 - 22,400,000}
 범주를 회귀 방정식에 포함시키려면 수치 형태로 변환해야 한다. **지시변수(indicator variable)** cond_new를 사용한다:
 
 $$\text{cond\_new} = \begin{cases} 1 & \text{새 것이면} \\ 0 & \text{중고이면} \end{cases}$$
+
 
 모형:
 $$\widehat{\text{price}} = 42.87 + 10.90 \times \text{cond\_new}$$
